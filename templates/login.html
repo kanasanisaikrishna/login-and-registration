@@ -163,17 +163,10 @@
 
     <section>
         <div class="login-box">
-            <p>Registration</p>
+            <p>Login</p>
             <form action="" method="POST">
                 {% csrf_token %}
-				<div class="user-box">
-                    <input required="true" name="fullname" type="text">
-                    <label>Full Name</label>
-                </div>
-				<div class="user-box">
-                    <input required="true" name="email" type="email">
-                    <label>Email</label>
-                </div>
+				
                 <div class="user-box">
                     <input required="true" name="username" type="text">
                     <label>Username</label>
@@ -182,10 +175,8 @@
                     <input required="true" name="password1" type="password">
                     <label>Password</label>
                 </div>
-				<div class="user-box">
-                    <input required="true" name="password2" type="password">
-                    <label>Conform Password</label>
-                </div>
+				
+                
                 <button type="submit">Submit</button>
             </form>
         </div>
