@@ -153,12 +153,36 @@
             width: 100%;
             text-align: center;
         }
+
+        .button1  {
+            position: right;
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #ddcccc;
+            background-color: #19253b;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 3px;
+            width: 20%;
+            text-align: center;
+            right : 10%; 
+        
+
+        }
     </style>
 </head>
 
 <body>
 
-
+    <form>
+        <button formaction="http://127.0.0.1:8000/" class="button1" type="submit" name="button1" >Home</button>
+    </form>
+    
 
 
     <section>
@@ -166,18 +190,17 @@
             <p>Registration</p>
             <form action="" method="POST">
                 {% csrf_token %}
-				<div class="user-box">
-                    <input required="true" name="fullname" type="text">
-                    <label>Full Name</label>
+				
+                <div class ="user-box">
+                    <input required ="true" name = "username" type="username">
+                    <label>User Name</label>    
+                
                 </div>
-				<div class="user-box">
+                <div class="user-box">
                     <input required="true" name="email" type="email">
                     <label>Email</label>
                 </div>
-                <div class="user-box">
-                    <input required="true" name="username" type="text">
-                    <label>Username</label>
-                </div>
+               
                 <div class="user-box">
                     <input required="true" name="password1" type="password">
                     <label>Password</label>

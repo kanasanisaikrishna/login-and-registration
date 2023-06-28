@@ -1,1 +1,37 @@
-<html>home page</html>
+<html>
+    <head>
+        <style>
+            .button1  {
+            position: right;
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #ddcccc;
+            background-color: #19253b;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 3px;
+            width: 20%;
+            text-align: center;
+            right : 10%; 
+        
+
+        }
+        </style>
+    </head>
+    <body>
+    <center>
+    <h1>welcome {{ user.username }}</h1>
+    <h2>Thank you for visiting the PROJECT</h2>
+    <h3>Have a nice Day</h3>
+    <form>
+        <button formaction="http://127.0.0.1:8000/" class="button1" type="submit" name="button1" >LOG OUT</button>
+        
+    </form>
+    </center>
+    </body>
+</html>
